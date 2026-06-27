@@ -35,7 +35,7 @@ export function Chatbot() {
     {
       id: "1",
       type: "bot",
-      content: "Hello! Welcome to AddisMark. How can I help you today?",
+      content: "Hello! Welcome to Epic. How can I help you today?",
       timestamp: new Date(),
     },
   ])
@@ -99,7 +99,7 @@ export function Chatbot() {
                 <Bot className="h-5 w-5 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="font-semibold text-primary-foreground">AddisMark Support</h3>
+                <h3 className="font-semibold text-primary-foreground">Epic Support</h3>
                 <p className="text-xs text-primary-foreground/80">Online - We reply instantly</p>
               </div>
             </div>

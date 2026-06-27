@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" })
 
 export const metadata: Metadata = {
-  title: "AddisMark - Sports Betting Platform",
+  title: "Epic - Sports Betting Platform",
   description: "Your premier destination for sports betting. Live odds, fast payouts, and the best betting experience.",
   keywords: ["sports betting", "live odds", "football", "basketball", "tennis", "betting platform"],
     generator: 'v0.app'

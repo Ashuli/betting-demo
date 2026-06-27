@@ -65,7 +65,7 @@ function Header() {
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-accent-foreground font-bold text-sm">
                 AM
               </div>
-              <span className="hidden sm:inline-block">AddisMark</span>
+              <span className="hidden sm:inline-block">Epic</span>
             </Link>
           </div>
 

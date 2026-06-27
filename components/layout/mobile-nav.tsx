@@ -28,7 +28,7 @@ export function MobileNav() {
         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground font-bold text-sm">
           AM
         </div>
-        <span className="font-bold text-lg">AddisMark</span>
+        <span className="font-bold text-lg">Epic</span>
       </div>
 
       <ScrollArea className="flex-1">

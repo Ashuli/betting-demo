@@ -15,7 +15,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-semibold mb-3">1. Acceptance of Terms</h2>
               <p className="text-muted-foreground">
-                By accessing and using AddisMark, you accept and agree to be bound by the terms and conditions of this
+                By accessing and using Epic, you accept and agree to be bound by the terms and conditions of this
                 agreement. If you do not agree to abide by the above, please do not use this service.
               </p>
             </section>
@@ -23,7 +23,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-semibold mb-3">2. Eligibility</h2>
               <p className="text-muted-foreground">
-                You must be at least 18 years old to use our services. By using AddisMark, you represent and warrant
+                You must be at least 18 years old to use our services. By using Epic, you represent and warrant
                 that you are at least 18 years of age and have the legal capacity to enter into this agreement.
               </p>
             </section>
@@ -59,7 +59,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-semibold mb-3">6. Responsible Gambling</h2>
               <p className="text-muted-foreground">
-                AddisMark is committed to responsible gambling. We provide tools to help you control your gambling
+                Epic is committed to responsible gambling. We provide tools to help you control your gambling
                 including deposit limits, self-exclusion, and time-out periods. If you feel you may have a gambling
                 problem, please seek help immediately.
               </p>
@@ -79,7 +79,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-semibold mb-3">8. Limitation of Liability</h2>
               <p className="text-muted-foreground">
-                AddisMark shall not be liable for any indirect, incidental, special, consequential, or punitive damages
+                Epic shall not be liable for any indirect, incidental, special, consequential, or punitive damages
                 resulting from your use of or inability to use the service.
               </p>
             </section>
@@ -87,7 +87,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-semibold mb-3">9. Contact Us</h2>
               <p className="text-muted-foreground">
-                If you have any questions about these Terms, please contact us at support@addismark.com or call our
+                If you have any questions about these Terms, please contact us at support@Epic.com or call our
                 customer service at +251 11 123 4567.
               </p>
             </section>

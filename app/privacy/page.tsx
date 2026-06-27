@@ -89,8 +89,8 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-semibold mb-3">8. Contact Us</h2>
               <p className="text-muted-foreground">
-                If you have any questions about this Privacy Policy, please contact us at privacy@addismark.com or write
-                to us at: AddisMark, Bole Sub-City, Addis Ababa, Ethiopia.
+                If you have any questions about this Privacy Policy, please contact us at privacy@Epic.com or write
+                to us at: Epic, Bole Sub-City, Addis Ababa, Ethiopia.
               </p>
             </section>
           </CardContent>

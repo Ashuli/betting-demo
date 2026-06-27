@@ -55,7 +55,7 @@ export default function RegisterPage() {
               </div>
             </div>
             <CardTitle className="text-2xl">Create Account</CardTitle>
-            <CardDescription>Join AddisMark and start betting</CardDescription>
+            <CardDescription>Join Epic and start betting</CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">

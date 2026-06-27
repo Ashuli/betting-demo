@@ -50,7 +50,7 @@ export default function SettingsPage() {
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="platform-name">Platform Name</Label>
-                  <Input id="platform-name" defaultValue="AddisMark" />
+                  <Input id="platform-name" defaultValue="Epic" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="support-email">Support Email</Label>

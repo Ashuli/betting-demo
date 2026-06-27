@@ -7,7 +7,7 @@ import { MatchCarousel } from "@/components/betting/match-carousel"
 import { MatchList } from "@/components/betting/match-list"
 import { LiveMatchBanner } from "@/components/betting/live-match-banner"
 import { AdBannerSlider } from "@/components/betting/ad-banner-slider"
-import { liveMatches, upcomingMatches } from "@/lib/mock-data"
+import { liveMatches, upcomingMatches, virtualGames } from "@/lib/mock-data"
 import { useMatches } from "@/hooks/use-matches"
 import { VirtualGames } from "@/components/betting/virtual-games"
 import { Badge } from "@/components/ui/badge"
@@ -73,7 +73,62 @@ export default function HomePage({ searchParams }: { searchParams: { sport?: str
               <AdBannerSlider />
             </section>
 
-            {/* Loading State */}
+            {/* Quick Games Strip */}
+            <section>
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-2">
+                  <Gamepad2 className="h-4 w-4 text-accent" />
+                  <h2 className="text-sm font-bold">Quick Games</h2>
+                </div>
+                <Link href="/games">
+                  <Button variant="ghost" size="sm" className="gap-1 text-xs h-7">
+                    See All <ChevronRight className="h-3 w-3" />
+                  </Button>
+                </Link>
+              </div>
+              <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-1">
+                {virtualGames.slice(0, 10).map((game) => {
+                  const gradients: Record<string, string> = {
+                    slots: "from-purple-800 to-indigo-900",
+                    casino: "from-rose-800 to-rose-900",
+                    virtual_racing: "from-blue-800 to-cyan-900",
+                    virtual_sports: "from-emerald-800 to-teal-900",
+                    cards: "from-amber-700 to-amber-900",
+                  }
+                  const icons: Record<string, string> = {
+                    slots: "🎰", casino: "🎡", virtual_racing: "🏎️", virtual_sports: "⚽", cards: "🃏",
+                  }
+                  const gradient = gradients[game.category] || "from-slate-700 to-slate-900"
+                  const icon = icons[game.category] || "🎮"
+
+                  return (
+                    <Link key={game.id} href="/games">
+                      <div className="shrink-0 w-20 cursor-pointer group">
+                        <div className={`relative h-16 w-20 rounded-lg overflow-hidden bg-gradient-to-br ${gradient} flex items-center justify-center hover:scale-105 transition-transform`}>
+                          {game.image ? (
+                            <img src={game.image} alt={game.name} className="absolute inset-0 w-full h-full object-cover" />
+                          ) : (
+                            <span className="text-2xl">{icon}</span>
+                          )}
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                          {game.featured && (
+                            <div className="absolute top-1 left-1 bg-amber-400 text-black text-[8px] font-bold px-1 rounded-full">HOT</div>
+                          )}
+                          {game.players && (
+                            <div className="absolute bottom-1 right-1 bg-black/70 text-white text-[8px] px-1 rounded-full flex items-center gap-0.5">
+                              <span className="inline-flex h-1 w-1 rounded-full bg-green-400"></span>
+                              {(game.players / 1000).toFixed(1)}k
+                            </div>
+                          )}
+                        </div>
+                        <p className="text-[9px] text-center mt-1 text-muted-foreground truncate font-medium">{game.name}</p>
+                      </div>
+                    </Link>
+                  )
+                })}
+              </div>
+            </section>
+
             {loading && (
               <div className="p-8 text-center">
                 <p className="text-muted-foreground">Loading matches...</p>

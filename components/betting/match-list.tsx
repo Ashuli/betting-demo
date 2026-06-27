@@ -35,17 +35,16 @@ export function MatchList({ matches, showMore = true }: MatchListProps) {
 
   return (
     <div className="bg-card rounded-lg border border-border overflow-hidden">
-      <div className="flex items-center gap-2 py-2 px-3 bg-muted/30 border-b border-border text-xs text-muted-foreground">
-        <span className="w-14 shrink-0">ID</span>
-        <span className="w-12 shrink-0">Time</span>
+      <div className="flex items-center gap-2 py-1.5 px-3 bg-muted/30 border-b border-border text-[10px] text-muted-foreground font-semibold uppercase tracking-wide">
+        <span className="w-10 shrink-0 text-center">Time</span>
         <span className="flex-1">Match</span>
-        <span className="w-8 shrink-0"></span>
+        <span className="w-5 shrink-0"></span>
         <div className="flex items-center gap-1 shrink-0">
-          <span className="w-16 text-center font-semibold">1</span>
-          <span className="w-16 text-center font-semibold">X</span>
-          <span className="w-16 text-center font-semibold">2</span>
+          <span className="w-14 text-center">1</span>
+          <span className="w-14 text-center">X</span>
+          <span className="w-14 text-center">2</span>
         </div>
-        <span className="w-8 shrink-0"></span>
+        <span className="w-7 shrink-0"></span>
       </div>
 
       {displayDates.map((dateKey) => {

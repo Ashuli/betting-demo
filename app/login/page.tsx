@@ -42,7 +42,7 @@ export default function LoginPage() {
               </div>
             </div>
             <CardTitle className="text-2xl">Welcome Back</CardTitle>
-            <CardDescription>Sign in to your AddisMark account</CardDescription>
+            <CardDescription>Sign in to your Epic account</CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
